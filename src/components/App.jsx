@@ -26,7 +26,7 @@ export default function App() {
         setBad(prevState => prevState + 1);
         break;
       default:
-        break;
+        throw new Error(`Тип поля option ${option} не обрабатывается`);
     };
   };
 
@@ -40,7 +40,7 @@ export default function App() {
     let positivePercentage = 0;
 
     if (good > 0) {
-      
+
       positivePercentage = Math.ceil((good / totalFeedback) * 100);
     }
 
