@@ -1,0 +1,12 @@
+.title {
+    margin-top: 10px;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 20px;
+}
